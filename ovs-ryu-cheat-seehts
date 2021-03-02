@@ -1,0 +1,8 @@
+List number of ports in ovs-vsctl
+=========================================
+sudo ovs-vsctl list interface | grep name
+
+Add port in ovs bridge
+========================================
+sudo ovs-vsctl add-port gtp_br0 g_c0a83c8c -- set Interface g_c0a83c8c type=gtp options:remote_ip=192.168.60.141
+sudo ovs-vsctl del-port gtp_br0 g_c0a83c8c
